@@ -8,17 +8,24 @@
     <h1>6. práce: podmínky</h1>
 
     <?php
-    $plnoletost=18;
-
+    $plnoletost=17;
+    $obcanka=15;
 
     if ($plnoletost >=18) {
-     echo "на здоровье";
+     echo "Na zdraví!";
      ?>
      <img src="kvas.jpg" alt="alcohol">
 
      <?php
-   } else { ?>
-    <?php echo "Извините, вам не 15";  ?> <img src="kys.jpg" alt="No_Chlast"> <?php  } ?> 
+      }elseif ($plnoletost >= 15) {
+       echo "Jakože občanku máš jako, ale musíš jakože ještě mít narozky 3 krát";
+       
+      ?>
+
+     <?php
+     }else {
+      ?>
+    <?php echo "Sorry kámo. Ještě nemáš ani 15!";  ?> <img src="kys.jpg" alt="No_Chlast"> <?php  } ?>
 
 
 
